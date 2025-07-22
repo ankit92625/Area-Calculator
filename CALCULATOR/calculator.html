@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Custom Calculator</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="calculator">
+    <div >
+        <button class="back-button" onclick="history.back()"> < Back</button>
+    </div>
+    <h1>SANJAY THAKUR</h1>
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button class="green" onclick="clearDisplay()">AC</button>
+      <button class="green" onclick="backspace()">⌫</button>
+      <button class="green" onclick="toggleSign()">+/-</button>
+      <button class="green" onclick="appendOperator('/')">÷</button>
+
+      <button onclick="appendNumber('7')">7</button>
+      <button onclick="appendNumber('8')">8</button>
+      <button onclick="appendNumber('9')">9</button>
+      <button class="green" onclick="appendOperator('*')">×</button>
+
+      <button onclick="appendNumber('4')">4</button>
+      <button onclick="appendNumber('5')">5</button>
+      <button onclick="appendNumber('6')">6</button>
+      <button class="green" onclick="appendOperator('-')">-</button>
+
+      <button onclick="appendNumber('1')">1</button>
+      <button onclick="appendNumber('2')">2</button>
+      <button onclick="appendNumber('3')">3</button>
+      <button class="green" onclick="appendOperator('+')">+</button>
+
+      <button onclick="appendOperator('%')">%</button>
+      <button onclick="appendNumber('0')">0</button>
+      <button onclick="appendNumber('.')">.</button>
+      <button class="purple" onclick="calculate()">=</button>
+    </div>
+  </div>
+
+  <script src="calc.js"></script>
+</body>
+</html>
